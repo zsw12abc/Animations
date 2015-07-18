@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="bss-vE-kId">
+                                <rect key="frame" x="0.0" y="44" width="321" height="214"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLY-PL-4MM">
+                                <rect key="frame" x="125" y="345" width="71" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EvW-7U-bwl"/>
+                                </constraints>
+                                <state key="normal" title="Start/Stop"/>
+                                <connections>
+                                    <action selector="updateImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y28-Dn-XRP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bss-vE-kId" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="ATf-a4-BpD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oLY-PL-4MM" secondAttribute="bottom" constant="193" id="Ks0-iA-XKl"/>
+                            <constraint firstItem="bss-vE-kId" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MSa-8X-0QG"/>
+                            <constraint firstItem="oLY-PL-4MM" firstAttribute="centerX" secondItem="bss-vE-kId" secondAttribute="centerX" id="O2L-vP-rLP"/>
+                            <constraint firstItem="oLY-PL-4MM" firstAttribute="top" secondItem="bss-vE-kId" secondAttribute="bottom" constant="87" id="TY4-Vr-iod"/>
+                            <constraint firstItem="bss-vE-kId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ttb-Tf-fg9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pikaImage" destination="bss-vE-kId" id="eXn-Yl-zZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="360" height="240"/>
+    </resources>
+</document>
